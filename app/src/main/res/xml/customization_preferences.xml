@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <SwitchPreference
+    android:key="bg_en"
+    android:title="Enable background"
+    android:defaultValue="false" />
+
+  <Preference
+    android:key="bg_pick"
+    android:title="Select image" />
+
+  <Preference
+    android:key="bg_pick_path"
+    android:title="Path"
+    android:selectable="false" />
+
+  <SeekBarPreference
+    android:key="bg_op"
+    android:title="Opacity"
+    app:min="0"
+    android:max="100"
+    android:defaultValue="50" />
+
+  <SeekBarPreference
+    android:key="bg_bl"
+    android:title="Blur radius"
+    app:min="0"
+    android:max="75"
+    android:defaultValue="0" />
+
+</PreferenceScreen>
